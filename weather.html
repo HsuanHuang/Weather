@@ -3,34 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weather</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="weather.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <title>Weather Forecast</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
 
 </head>
 <body>
+  
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-6">
       <!-- Large button group -->
       <div class="btn-group">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
           Taipei <span class="caret"></span>
         </button>
         <ul id="dropdown" class="dropdown-menu" role="menu">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Taipei</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tainan</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hualien</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Taidong</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Taipei</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tainan</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hualian</a></li>
         </ul>
       </div>
-      <div><span class="temperature">23</span> &#8451;</div>
+      <h1><span id="temp"></span> &#8451;</h1>
     </div>
     <div class="col-xs-6">
       <canvas id="today" width="100" height="100"></canvas>
       <div class="condition">
-          <span class="date">4 May 2015</span>: Mostly Cloudy
+        <span class="date"></span></br><h3 class="text"><h3>
       </div>
     </div>
   </div>
@@ -62,15 +60,17 @@
                 </tr>
               </tbody>
             </table>
+        
           </div>
     </div>
   </div>
   
 </div>
+   
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 <script src="//darkskyapp.github.io/skycons/skycons.js"></script>
-<script src="weather.js"></script>
 </body>
 </html>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
